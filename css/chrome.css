@@ -672,4 +672,24 @@ table {
 table td {
     border-right: 1px solid #e5e5e5;
 }
+
+.uk-alert .uk-icon {
+    margin: 15px 15px 0 0;
+    position: absolute;
+}
+
+.uk-alert::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "FontAwesome"; font-weight: 900; content: "\f05a";
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 2rem;
+}
+
+
 /* Chapter specifix css */
