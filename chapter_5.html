@@ -146,6 +146,61 @@
                 <div id="content" class="content uk-padding-large">
                     <main>
                         <h1 id="funktionen"><a class="header" href="#funktionen">Funktionen</a></h1>
+<p>In diesem Kapitel erhalten Sie Anleitungen für einige grundlegende Workflows, wie Sie mit ownCloud arbeiten können.</p>
+<h2 id="dateien-erstellen"><a class="header" href="#dateien-erstellen">Dateien erstellen</a></h2>
+<p>ownCloud bietet eine native Möglichkeit, schnell und unkompliziert neue Dateien der gängigsten Dateitypen zu erstellen. Klicken Sie dazu in der Dateiliste auf den Button &quot;Neu&quot;. Im sich öffnenden Kontextmenü können Sie nun Ihren gewünschten Dateityp auswählen.</p>
+<p><img src="./images/datei-erstellen.jpg#uk-margin-auto" alt="Datei erstellen" /></p>
+<p>Nach der Eingabe des gewünschten Dateinamens öffnet sich die Datei je nach Typ im standardmäßigen Editor. Sie können somit direkt beginnen, Ihr Dokument zu bearbeiten.</p>
+<video style="width: 100%; height: auto;margin-top: 25px;" width="320" height="240" controls>
+  <source src="video/Datei-erstellen.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<h2 id="dateien-und-ordner-hochladen"><a class="header" href="#dateien-und-ordner-hochladen">Dateien und Ordner hochladen</a></h2>
+<p>Vorhandene, lokale Dateien können Sie spielend einfach in die Cloud hochladen. Klicken und ziehen Sie entsprechende Dateien per Drag'n Drop in die Dateiliste oder nutzen Sie den Button &quot;Hochladen&quot;. Sowohl Dateien als auch ganze Ordner können auf beiden Wegen hochgeladen werden.</p>
+<video style="width: 100%; height: auto;margin-top: 25px;" width="320" height="240" controls>
+  <source src="video/EG-CS-37.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<h3 id="upload-via-desktop-sync-client"><a class="header" href="#upload-via-desktop-sync-client">Upload via Desktop Sync-Client</a></h3>
+<p>Um Dateien mit Hilfe des Desktop-Sync-Clients hochzuladen fügen Sie die entsprechenden Dateien einfach in Ihr <a href="./chapter_2.html#einrichtung">während der Installation</a> angegebenes Sync-Verzeichnis. Der Desktop-Sync-Client lädt nun im Hintergrund Ihre Dateien hoch und hält diese synchron.</p>
+<h3 id="upload-via-mobile-client"><a class="header" href="#upload-via-mobile-client">Upload via Mobile Client</a></h3>
+<p>Um eine Datei von Ihrem mobilen Endgerät hochzuladen klicken Sie in der App auf das + Icon. Sie können dann entweder aus Ihren Dateien (&quot;Datei hochladen&quot;),<br />
+aus Ihrer Fotomediathek (&quot;Hochladen aus Fotobibliothek&quot;) oder direkt ein Foto mit Ihrer Kamera aufnehmen (&quot;Foto oder Video aufnehmen&quot;) und zum Upload auswählen.</p>
+<p><img src="./images/iOS-addfiles.jpg#uk-margin-auto" alt="iOS: Datei hochladen" /></p>
+<h2 id="dateien-und-ordner-mit-anderen-personen-teilen"><a class="header" href="#dateien-und-ordner-mit-anderen-personen-teilen">Dateien und Ordner mit anderen Personen teilen</a></h2>
+<p>Eine der wichtigsten Funktionen einer Cloud-Lösung besteht in der Möglichkeit, Dateien mit anderen Personen zu teilen. ownCloud bietet hierfür weitreichende Möglichkeiten. Klicken Sie dazu auf das Share Icon <img src="./images/icon-share.jpg#uk-display-inline" alt="Share Icon" /> einer Datei oder Ordner oder wählen Sie im Kontextmenü (= Rechtsklick auf die entsprechende Ressource) &quot;Teilen&quot;</p>
+<p><img src="./images/5-shareicon.jpg#uk-margin-auto" alt="" /></p>
+<p>In der sich öffnenden rechten Sidebar haben Sie nun zwei Optionen:</p>
+<h3 id="mit-anderen-teilen"><a class="header" href="#mit-anderen-teilen">Mit anderen teilen</a></h3>
+<p>Mit anderen Personen teilen bedeutet, dass Sie Kollegen und Schülern Zugriff auf Ihre Datei gewähren. Sie geben also explizit an, mit wem Sie die Ressource teilen möchten. Hierbei können Sie einzelne Namen, E-Mail-Adressen oder Gruppennamen eingeben.<br />
+Des weiteren können Sie Berechtigungen festlegen. Klicken Sie dazu auf &quot;Als Betrachter einladen&quot;. Es stehen Ihnen folgende Optionen zur Verfügung:</p>
+<p><img src="images/A-CS-04-1.jpg#uk-margin-auto" alt="" /></p>
+<ul>
+<li><strong>Betrachter</strong> - Die empfangende Person kann die Datei lediglich betrachten, herunterladen und teilen. Sie kann diese aber nicht bearbeiten.</li>
+<li><strong>Bearbeiter</strong> - Selbe Berechtigung wie &quot;Betrachter&quot; aber kann zusätzlich die Datei bearbeiten.</li>
+<li><strong>Benutzerdefinierte Rechte</strong> - Sollten Sie individuelle Berechtigungen vergeben wollen können Sie dies hier tun.</li>
+</ul>
+<p><img src="images/A-CS-05-1.jpg#uk-margin-auto" alt="" /></p>
+<p>Mit Klick auf &quot;Teilen&quot; stellen Sie den entsprechenden Personen nun die Ressource zur Verfügung. Diese werden dabei per E-Mail benachrichtigt und finden die Datei ab sofort in ihrem persönlichen Speicherbereich.</p>
+<h3 id="per-link-teilen"><a class="header" href="#per-link-teilen">Per Link teilen</a></h3>
+<p>Sollten Sie eine Ressource mit anderen teilen wollen die nicht zu Ihrer Organisation oder Schule gehört können Sie die Funktion &quot;per Link teilen&quot; verwenden. Hierbei wird ein Link erstellt über den die entsprechende Ressource erreichbar ist.<br />
+Hierbei wird noch einmal unterschieden zwischen:</p>
+<ul>
+<li><strong>Quicklink</strong> - Ein Zugriffslink für die Ressource mit einer feststehenden Berechtigung. Diesen erreichen Sie übrigens auch über das Quicklink Icon <img src="./images/icon-quicklink.jpg#uk-display-inline" alt="Share Icon" /> in der Dateiliste.</li>
+<li><strong>Link hinzufügen</strong> - Hier können Sie mehrfach Zugriffslinks mit unterschiedlichen Berechtigungen erstellen. Zudem können Sie zur besseren Übersicht Namen vergeben.</li>
+</ul>
+<p>Mit Klick auf &quot;Bearbeiter&quot; können Sie analog zu &quot;Mit anderen teilen&quot; die Berechtigung festlegen, die für den jeweiligen Link gelten soll.</p>
+<video style="width: 100%; height: auto;margin-top: 25px;" width="320" height="240" controls>
+  <source src="video/sharing.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<h3 id="mobile-clients-dateien-teilen"><a class="header" href="#mobile-clients-dateien-teilen">Mobile Clients: Dateien teilen</a></h3>
+<p>Um eine Datei auf den Mobile Clients zu teilen klicken Sie auf das <img src="./images/icon_threedots.jpg#uk-display-inline" alt="Three dot" /> Icon neben der entsprechenden Datei. Um die Datei mit anderen zu teilen (s. <a href="./chapter_5.html#mit-anderen-teilen">Mit anderen teilen</a>) wählen Sie &quot;Dieses Datei freigeben&quot;. Um die Datei per Link zu teilen (s. <a href="./chapter_5.html#per-link-teilen">Per Link teilen</a>) wählen Sie &quot;Links&quot;.<br />
+Alle vom Web-Client möglichen Berechtigungseinstellungen sowie Passwortschutz und Ablaufdatum lassen sich ebenfalls setzen.</p>
+<video style="width: 100%; height: auto;margin-top: 25px;" width="320" height="240" controls>
+  <source src="video/iOS-sharing.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
                     </main>
 
