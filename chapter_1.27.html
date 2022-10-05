@@ -154,16 +154,42 @@
 
   <tr>
     <td class="uk-text-left">Bieten Sie dem Nutzer die Möglichkeit, Dateien aus dem Sync-Client heraus im WebOffice zu öffnen?</td>
-    <td class="uk-text-left">Ja, die WebOffice-Module sind über das native Kontextmenü Ihres Betriebssystems integriert und lassen sich per Rechtsklick aufrufen.</td>
+    <td class="uk-text-left">Ja, die WebOffice-Module sind nativ eingebunden und lassen sich direkt starten.</td>
   </tr>
 </table> -->
 <h2 id="anforderung"><a class="header" href="#anforderung">Anforderung</a></h2>
 <p>Bieten Sie dem Nutzer die Möglichkeit, Dateien aus dem Sync-Client heraus im WebOffice zu öffnen?</p>
 <h2 id="verifizierung"><a class="header" href="#verifizierung">Verifizierung</a></h2>
-<p>Ja, die WebOffice-Module sind über das native Kontextmenü Ihres Betriebssystems integriert und lassen sich per Rechtsklick aufrufen.</p>
-<h3 id="anleitung-für-den-test"><a class="header" href="#anleitung-für-den-test">Anleitung für den Test</a></h3>
-<div class="uk-alert uk-alert-danger">
-TODO: für alle clients verfügbar, alle Clients beschreiben inkl. Screenshots
+<p>Ja, die WebOffice-Module sind nativ eingebunden und lassen sich direkt starten.</p>
+<h2 id="anleitung-für-den-test"><a class="header" href="#anleitung-für-den-test">Anleitung für den Test</a></h2>
+<h3 id="desktop-sync-client"><a class="header" href="#desktop-sync-client">Desktop-Sync-Client</a></h3>
+<p>Öffnen Sie den lokalen Synchronisationsordner wie in <a href="./chapter_1.24.html">EG-CS-11</a> beschrieben.
+Erstellen Sie nun in diesem Ordner eine Web-Office Datei oder kopieren Sie eine existierende hinein. Wie Sie Dateien erstellen erfahren Sie in <a href="./chapter_5.html#dateien-erstellen">Kapitel 5: Dateien erstellen</a>.<br />
+Warten Sie, bis die Synchronisation abgeschlossen ist, zu erkennen am grünen Häkchen neben dem Dateinamen.</p>
+<div class="uk-grid-collapse uk-child-width-expand@s uk-child-width-1-2@m uk-text-center uk-margin-large-top" uk-grid>
+    <div>
+      <div class="uk-card uk-card-default uk-card-body">
+        <img src="./images/sync-running.jpg" class="uk-margin-auto" />
+        <p>Blaues Icon: Die Datei wird gerade synchronisiert.</p>
+      </div>
+    </div>
+    <div>
+      <div class="uk-card uk-card-default uk-card-body">
+        <img src="./images/sync-done.jpg" class="uk-margin-auto" />
+        <p>Grünes Icon: Der Sync-Prozess ist abgeschlossen - die Datei ist aktuell.</p>
+      </div>
+    </div>
+</div>
+<p>Klicken Sie nun mit der rechten Maustaste auf die Datei und wählen Sie &quot;ByCS&quot; -&gt; &quot;In OnlyOffice öffnen&quot;.</p>
+<p><img src="./images/dclient-openOnlyOffice.jpg#uk-margin-auto" alt="In Only Office öffnen" /></p>
+<p>Je nach Dateityp öffnet sich das entsprechende WebOffice-Modul in einem neuen Fenster Ihres bevorzugten Browsers. Sie können das Dokument nun nach Belieben bearbeiten. Die Änderungen werden über den Desktop-SyncClient automatisch auf Ihre Gerät synchronisiert.</p>
+<h3 id="mobile-clients"><a class="header" href="#mobile-clients">Mobile Clients</a></h3>
+<img src="./images/iOS-openinonlyoffice.jpg" class="uk-align-left@m" />
+<p>Auch über die Mobile Clients für iOS und Android lassen sich Dateien direkt in den WebOffice-Modulen öffnen. Klicken Sie dazu auf das <img src="./images/icon_threedots.jpg#uk-display-inline" alt="Kontext-Menü" /> Icon neben einer WebOffice-kompatiblen Datei. Im sich öffnenden Menü klicken Sie nun auf &quot;In OnlyOffice öffnen (web)&quot;. Der der Dateiendung entsprechende Editor öffnet sich, Sie können die Datei nun bearbeiten.</p>
+<div class="uk-clearfix"></div>
+<div class="uk-alert">
+  <h4 id="eingeschränkte-funktionalität"><a class="header" href="#eingeschränkte-funktionalität">Eingeschränkte Funktionalität</a></h4>
+  <p>Die in den mobile Clients verfügbaren WebOffice-Module verfügen nur über einen Bruchteil der über den Web-Client verfügbaren Funktionalitäten zum Bearbeiten von Dokumenten. Wie Sie die WebOffice-Module im Web-Client starten erfahren Sie in <a href="./chapter_1.13.html">Kapitel A-WO-01</a>.</p>
 </div>
 
                     </main>

@@ -691,5 +691,13 @@ table td {
     font-size: 2rem;
 }
 
+.uk-button {
+    font-size: 0.875em !important;
+}
+
+.uk-button-primary {
+    color: #fff !important;
+}
+
 
 /* Chapter specifix css */
