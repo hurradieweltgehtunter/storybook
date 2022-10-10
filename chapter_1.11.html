@@ -155,29 +155,29 @@
   <tr>
     <td class="uk-text-left">Stellen Sie einen integrierten und zeitlich konfigurierbaren Virenscanner für On-Demand und On-Access-Scans zur
 Verfügung?</td>
-    <td class="uk-text-left">Ja, ownCloud verfügt standardmäßig über ausgereifte Anti-Viren-Mechanismen. Standardmäßig wird jeder Upload auf Schadsoftware überprüft und im Zweifelsfall blockiert. Der Benutzer wird über jeden Fund schädlicher Software per E-Mail informiert.</td>
+    <td class="uk-text-left">Ja, ownCloud verfügt standardmäßig über ausgereifte Anti-Viren-Mechanismen. Jede Datei wird auf Schadsoftware überprüft und im Zweifelsfall blockiert. Der Benutzer wird über jeden Fund schädlicher Software per E-Mail informiert.</td>
   </tr>
 </table> -->
 <h2 id="anforderung"><a class="header" href="#anforderung">Anforderung</a></h2>
 <p>Stellen Sie einen integrierten und zeitlich konfigurierbaren Virenscanner für On-Demand und On-Access-Scans zur
 Verfügung?</p>
 <h2 id="verifizierung"><a class="header" href="#verifizierung">Verifizierung</a></h2>
-<p>Ja, ownCloud verfügt standardmäßig über ausgereifte Anti-Viren-Mechanismen. Standardmäßig wird jeder Upload auf Schadsoftware überprüft und im Zweifelsfall blockiert. Der Benutzer wird über jeden Fund schädlicher Software per E-Mail informiert.</p>
+<p>Ja, ownCloud verfügt standardmäßig über ausgereifte Anti-Viren-Mechanismen. Jede Datei wird auf Schadsoftware überprüft und im Zweifelsfall blockiert. Der Benutzer wird über jeden Fund schädlicher Software per E-Mail informiert.</p>
 <h2 id="anleitung-für-den-test"><a class="header" href="#anleitung-für-den-test">Anleitung für den Test</a></h2>
-<p>Das European Institute for Computer Antivirus Research (EICAR) stellt eine Testdatei für Virenscanner zur Verfügung. Diese ist ungefährlich, löst jedoch einen Fund in allen gängigen Virenscannerm aus.</p>
-<h3 id="onupload"><a class="header" href="#onupload">OnUpload</a></h3>
-<ol>
-<li>Laden Sie die Testdatei herunter: <a href="https://secure.eicar.org/eicar.com">https://secure.eicar.org/eicar.com</a>.</li>
-<li>Laden Sie diese Datei nun in ownCloud Web hoch (z.B. Drag'n Drop)</li>
-<li>Sie können erkennen, dass die Datei nicht in der Dateliste erscheint. Detailierte Informationen über den Fund werden Ihnen per E-Mail zugestellt.</li>
-</ol>
+<div class="uk-alert">
+  Die hier genannten Dateien zur Überprüfung des Virenscanners sind spezielle Testdateien. Diese enthalten Signaturen von echtem Schadcode und lösen damit einen Fund in Virenscannern aus, stellen aber keine reelle Gefahr dar.
+</div>
+<p>Klicken Sie im WebClient in der linken Sidebar auf &quot;Spaces&quot;. Sie finden dort einen Space namens &quot;Malware&quot;. Dieser enthält einige Dateien, mit dem Sie die Funktion des Virenscanners überprüfen können.</p>
 <h3 id="ondemand"><a class="header" href="#ondemand">OnDemand</a></h3>
-<ol>
-<li>Öffnen Sie das Kontextmenü einer Datei (z.B. Rechtsklick)</li>
-<li>Mit Klick auf &quot;Auf Viren überprüfen&quot; starten Sie den Virenscanner, der diese Datei nun überprüft.</li>
-</ol>
+<p>Klicken Sie in der Zeile einer Datei auf das <img src="./images/icon_threedots.jpg#uk-display-inline" alt="Kontext-Menü" /> Icon oder klicken Sie mit der rechten Maustaste auf eine Datei um das Kontextmenü zu öffnen. Wählen Sie nun &quot;Auf Viren überprüfen&quot;.</p>
+<p><img src="./images/scanforviruses.jpg#uk-align-center" alt="Auf Viren überprüfen" /></p>
+<p>Die Datei wird nun überprüft. Da es sich um eine Datei mit Schadsoftware handelt wird diese gelöscht und Sie erhalten per E-Mail einen Bericht darüber.</p>
 <h3 id="onaccess"><a class="header" href="#onaccess">OnAccess</a></h3>
-<p>Der OnAccess-Check erfolgt automatisch im Hintergrund. Jedesmal wenn eine Datei geöffnet wird überprüft der Virenscanner diese und verhindert dies bei einem Fund. Somit wird sichergestellt, dass schädlicher Code, der nach dem Upload einer Datei hinzugefügt wurde, nicht ausgeführt werden kann.</p>
+<p>Klicken Sie auf den Dateinamen einer Datei um diese zu öffnen. Die Datei wird nicht geöffnet und verschwindet aus der Dateiliste. Sie werden per E-Mail darüber informiert, dass Malware gefunden und die Datei gelöscht wurde.</p>
+<div class="uk-alert">
+  <h4 id="berichte-per-e-mail"><a class="header" href="#berichte-per-e-mail">Berichte per E-Mail</a></h4>
+  <p>Benutzer werden über Funde von Schadsoftware per E-Mail informiert. Bitte überprüfen Sie mit welchem Account aus <a href="./chapter_4.html">Kapitel 4: Accounts</a> Sie angemeldet sind und welche E-Mail-Adresse für Ihren Benutzeraccount hinterlegt ist.</p>
+</div>  
 
                     </main>
 
