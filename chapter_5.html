@@ -152,13 +152,13 @@
 <p><img src="./images/datei-erstellen.jpg#uk-margin-auto" alt="Datei erstellen" /></p>
 <p>Nach der Eingabe des gewünschten Dateinamens öffnet sich die Datei je nach Typ im standardmäßigen Editor. Sie können somit direkt beginnen, Ihr Dokument zu bearbeiten.</p>
 <video style="width: 100%; height: auto;margin-top: 25px;" width="320" height="240" controls>
-  <source src="video/Datei-erstellen.mp4" type="video/mp4">
+  <source src="videos/Datei-erstellen.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 <h2 id="dateien-und-ordner-hochladen"><a class="header" href="#dateien-und-ordner-hochladen">Dateien und Ordner hochladen</a></h2>
 <p>Vorhandene, lokale Dateien können Sie spielend einfach in die Cloud hochladen. Klicken und ziehen Sie entsprechende Dateien per Drag'n Drop in die Dateiliste oder nutzen Sie den Button &quot;Hochladen&quot;. Sowohl Dateien als auch ganze Ordner können auf beiden Wegen hochgeladen werden.</p>
 <video style="width: 100%; height: auto;margin-top: 25px;" width="320" height="240" controls>
-  <source src="video/EG-CS-37.mp4" type="video/mp4">
+  <source src="videos/EG-CS-37.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 <h3 id="upload-via-desktop-sync-client"><a class="header" href="#upload-via-desktop-sync-client">Upload via Desktop Sync-Client</a></h3>
@@ -196,16 +196,30 @@ Hierbei wird noch einmal unterschieden zwischen:</p>
   Wie Sie einen Freigabelink mit einem automatischen Ablaufdatum versehen erfahren Sie in <a href="./chapter_1.30.html">Kapitel EG-CS-22</a>.
 </div>
 <video style="width: 100%; height: auto;margin-top: 25px;" width="320" height="240" controls>
-  <source src="video/sharing.mp4" type="video/mp4">
+  <source src="videos/sharing.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 <h3 id="mobile-clients-dateien-teilen"><a class="header" href="#mobile-clients-dateien-teilen">Mobile Clients: Dateien teilen</a></h3>
 <p>Um eine Datei auf den Mobile Clients zu teilen klicken Sie auf das <img src="./images/icon_threedots.jpg#uk-display-inline" alt="Three dot" /> Icon neben der entsprechenden Datei. Um die Datei mit anderen zu teilen (s. <a href="./chapter_5.html#mit-anderen-teilen">Mit anderen teilen</a>) wählen Sie &quot;Dieses Datei freigeben&quot;. Um die Datei per Link zu teilen (s. <a href="./chapter_5.html#per-link-teilen">Per Link teilen</a>) wählen Sie &quot;Links&quot;.<br />
 Alle vom Web-Client möglichen Berechtigungseinstellungen sowie Passwortschutz und Ablaufdatum lassen sich ebenfalls setzen.</p>
 <video style="width: 100%; height: auto;margin-top: 25px;" width="320" height="240" controls>
-  <source src="video/iOS-sharing.mp4" type="video/mp4">
+  <source src="videos/iOS-sharing.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
+<h2 id="virtual-file-system-vfs"><a class="header" href="#virtual-file-system-vfs">Virtual File System (VFS)</a></h2>
+<p>ownCloud bietet den Nutzern die Möglichkeit, bei der Synchronisierung von Daten ein virtuelles Dateisystem (VFS) zu aktivieren. Das VFS stellt dem Benutzer alle Dateien in seinem Speicherbereich lokal zur Verfügung - allerdings nur über Platzhalter. Erst wenn der Benutzer eine Datei öffnet wird diese im Hintergrund automatisch heruntergeladen. Dies hat eine enorme Platzersparnis zur Folge und macht eine selektiven Dateisynchronisation aus Platzgründen obsolet.</p>
+<div class="uk-alert">
+  <h4 id="hinweis"><a class="header" href="#hinweis">Hinweis</a></h4>
+  <p>VFS ist aktuell nur für den Windows Sync-Client verfügbar. Für Mac sind für die Nutzung von VFS angekündigte Schnittstellen leider bisher nicht von Apple implementiert worden was die Nutzung von VFS verhindert.</p>
+</div>
+<p><img src="./images/vfs-win.jpg#uk-margin-auto" alt="VFS Windows" /></p>
+<p>Das <img src="./images/icon-cloud.jpg#uk-display-inline" alt="Cloud Icon" /> Icon zeigt Ihnen an, dass diese Datei als Platzhalter auf Ihrem lokalen Dateisystem existiert. Klicken Sie doppelt auf eine Datei um diese zu öffnen. Sie werden sehen, dass sie das Icon in <img src="./images/icon-synced.jpg#uk-display-inline" alt="Icon Synced" /> geändert wird. Die Datei ist jetzt heruntergeladen und kann lokal bearbeitet werden. Änderungen werden automatisch in die Cloud synchronisiert.</p>
+<p>Sie können Dateien oder auch ganze Verzeichnisse herunterladen und damit auch offline verfügbar machen im dem Sie auf eine Datei rechts klicken und &quot;Immer auf diesem Gerät beibehalten&quot; wählen. Möchten Sie diesen Prozess rückgängig machen um Speicherplatz auf Ihrem lokalen Gerärt freizugeben wählen Sie im Kontextmenü &quot;Speicherplatz freigeben&quot;. Damit wird die lokale Kopie gelöscht und wieder per Platzhalter vorgehalten.</p>
+<div class="uk-alert">
+  <h4 id="hinweis-1"><a class="header" href="#hinweis-1">Hinweis</a></h4>
+  <p>VFS ist für Windows standardmäßig aktiviert. Damit sind Verzeichnisse und Dateien nicht automatisch offline verfügbar. Dies muss über Rechtsklick -> "Immer auf diesem Gerät beibehalten" geschehen. Dies kann auch für den gesamten Sync-Ordner aktiviert werden.
+  </p>
+</div>
 
                     </main>
 

@@ -172,6 +172,40 @@ Die Suche umfasst dabei viele Attribute wie z.B.</p>
 <li>Tags (s. <a href="./chapter_1.40.html">EG-CS-46</a>)</li>
 <li>Dateiinhalte (Volltextsuche, s. <a href="./chapter_1.41.html">EG-CS-47</a>)</li>
 </ul>
+<p>Die Suche kann mit Hilfe von Stichwörtern weiter eingegrenzt werden. Um nur Dageinamen zu durchsuchen stellen Sie Ihrem Suchbegriff &quot;<strong>Name:</strong>&quot; voran.</p>
+<h3 id="beispiel-1"><a class="header" href="#beispiel-1">Beispiel 1</a></h3>
+<p>Sie möchten nach Dateien suchen, die den Dateinamen &quot;Protokoll&quot; haben. Geben Sie im Suchfeld ein: &quot;Name: Protokoll&quot;. Somit werden nur Dateinamen durchsucht, nicht aber Tags, Inhalte oder sonstige Attribute.</p>
+<h3 id="beispiel-2"><a class="header" href="#beispiel-2">Beispiel 2</a></h3>
+<p>Sie möchten nach Dateien suchen, die im Dateinamen mit &quot;Rechnung&quot; beginnen, also &quot;Rechnung-1.pdf&quot; oder &quot;Rechnung 2.docx&quot;. Geben Sie im Suchfeld ein: &quot;Name: Rechnung <strong>*</strong>&quot;. Es werden wieder nur Dateinamen durchsucht. Der Platzhalter * am Ende eines Suchbegriffs bedeutet, es werden alle Dateien gefunden, die mit &quot;Rechnung&quot; beginnen.<br />
+Stellen Sie den Platzhalter * vor den Suchbegriff (&quot;*Rechnung&quot;) werden alle Dateien gefunden, die auf &quot;Rechnung&quot; enden. Diese Reihenfolge eignet sich eher für das Suchen nach Dateityp, z.B. &quot;*.pdf&quot;.</p>
+<h2 id="weitere-suchbefehle"><a class="header" href="#weitere-suchbefehle">Weitere Suchbefehle</a></h2>
+<table class="uk-table uk-table-striped">
+  <tr>
+    <th>Zusatz</th>
+    <th>Beispiel</th>
+    <th>Bedeutung</th>
+  </tr>
+<tr>
+    <td><i>kein Zusatz</i></td>
+    <td>Klasse 8a</td>
+    <td>Alle Attribute werden durchsucht: Dateinamen, Tags und Dateiinhalte (Volltextsuche)</td>
+  </tr>
+<tr>
+    <td><strong>Name:</strong></td>
+    <td>Name:Rechnung-1.docx</td>
+    <td>Es werden nur Dateinamen auf den Suchbegriff überprüft.</td>
+  </tr>
+<tr>
+    <td><strong>Tags:</strong></td>
+    <td>Tags:Verwaltung</td>
+    <td>Es werden nur Tags durchsucht. Alle Dateien, die das Tag "Verwaltung" haben werden gefunden, nicht jedoch z.B. "Verwaltung.docx".</td>
+  </tr>
+<tr>
+    <td><strong>Content:</strong></td>
+    <td>Content:Stundenplan Klasse 8a</td>
+    <td>Volltextsuche, es werden nur Dateiinhalte durchsucht, nicht aber Dateinamen oder Tags.</td>
+  </tr>
+</table>
 <video style="width: 100%; height: auto;margin-top: 25px;" width="320" height="240" controls>
                 <source src="videos/A-CS-08.mp4" type="video/mp4">
               Your browser does not support the video tag.
