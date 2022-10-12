@@ -157,7 +157,68 @@
 <p>Sie sehen nun die Grafana-Startseite, die alle relevanten Metriken im Überblick bereitstellt.</p>
 <p><img src="./images/6-3.jpg#uk-margin-auto" alt="Grafana Dashboard" /></p>
 <p>Jeder Benutzer hat lediglich Lese-Berechtigungen. Die Gefahr, unwissentlich Dinge zu löschen oder zu ändern besteht nicht. Sie können sich im Monitoring-Dashboard frei bewegen und alles erkunden.</p>
-<div class="uk-alert uk-alert-danger">MORE TBD</div>
+<h2 id="erläuterung-der-metriken"><a class="header" href="#erläuterung-der-metriken">Erläuterung der Metriken</a></h2>
+<p>Auf der Startseite sehen Sie alle Metriken, die laut Anforderungskonzept unter MUP-05 gefordert sind. Im folgenden werden diese kurz erläutert (von oben nach unten in Erscheinungsreihenfolge).</p>
+<h3 id="audit-log"><a class="header" href="#audit-log">Audit Log</a></h3>
+<p>Ein vollständiges AuditLog, das <strong>alle</strong> Operationen auf der ByCS Plattform listet.</p>
+<h3 id="proxy-access-log"><a class="header" href="#proxy-access-log">Proxy Access Log</a></h3>
+<p>Ein Protokoll, das alle Zugriffe über den Proxy listet.</p>
+<h3 id="technical-log-owncloud"><a class="header" href="#technical-log-owncloud">Technical Log ownCloud</a></h3>
+<p>Ein Protokoll, das alle technischen Operationen innerhalb der ownCloud-Software listet.</p>
+<h3 id="total-users-with-access-to-owncloud-and-onlyoffice"><a class="header" href="#total-users-with-access-to-owncloud-and-onlyoffice">Total users with access to ownCloud and OnlyOffice</a></h3>
+<p>Live-Anzeige über Zeit, wieviele Benutzer Zugriff auf den Cloudspeicher und die WebOffice-Module haben.</p>
+<h3 id="logins"><a class="header" href="#logins">Logins</a></h3>
+<h4 id="total-logins"><a class="header" href="#total-logins">Total Logins</a></h4>
+<p>Live-Anzeige über die Anzahl der aktuell angemeldeten Benutzer.</p>
+<h4 id="logins-per-client"><a class="header" href="#logins-per-client">Logins per Client</a></h4>
+<p>Live-Anzeige über die Anzahl aktuell angemeldeter Benutzer, aufgeteilt nach Client.</p>
+<h4 id="logins-1"><a class="header" href="#logins-1">Logins</a></h4>
+<p>Eine Aufschlüsselung der Anzahl an Logins über Zeit.</p>
+<h4 id="login-errors"><a class="header" href="#login-errors">Login Errors</a></h4>
+<p>Eine Aufschlüsselung fehlgeschlagener Anmelde-Versuche über Zeit und Fehlertyp.</p>
+<h4 id="refresh-tokens"><a class="header" href="#refresh-tokens">Refresh Tokens</a></h4>
+<p>Eine Aufschlüsselung der Anzahl ausgestellter Login-Refresh-Tokens über Zeit.</p>
+<h4 id="logouts"><a class="header" href="#logouts">Logouts</a></h4>
+<p>Eine Aufschlüsselung aller Logouts über Zeit.</p>
+<h3 id="service-status"><a class="header" href="#service-status">Service Status</a></h3>
+<h4 id="service-health-status-total"><a class="header" href="#service-health-status-total">Service Health Status total</a></h4>
+<p>Allgemeine Anzeige des Health-Status der Plattform über Zeit. Zeiten, in denen Fehler auftreten werden orange/rot dargestellt.</p>
+<h4 id="service-health-status"><a class="header" href="#service-health-status">Service Health Status</a></h4>
+<p>Anzeige des Health-Status einzelner Services über Zeit. Zeiten, in denen Fehler auftreten werden orange/rot dargestellt.</p>
+<ul>
+<li><strong>Keycloak:</strong> Identity-Provider</li>
+<li><strong>ownCloud:</strong> Plattform des Cloudspeichers</li>
+<li><strong>onlyoffice:</strong> WebOffice-Module</li>
+<li><strong>wopiserver:</strong> Modul, das die Kommunikation zwischen ownCloud und OnlyOffice regelt</li>
+</ul>
+<h3 id="storage"><a class="header" href="#storage">Storage</a></h3>
+<h4 id="storage-health"><a class="header" href="#storage-health">Storage health</a></h4>
+<p>Allgemeine Anzeige über den Health-Zustand des Cloudspeichers.</p>
+<h4 id="storage-usage"><a class="header" href="#storage-usage">Storage usage</a></h4>
+<p>Summe des gesamten, tatsächlich genutzen Speichers</p>
+<h4 id="storage-usage-over-time"><a class="header" href="#storage-usage-over-time">Storage usage over time</a></h4>
+<p>Aufzeichnung des gesamten genutzten Speichers über Zeit</p>
+<h4 id="storage-write-speeds"><a class="header" href="#storage-write-speeds">Storage Write speeds</a></h4>
+<p>Aufzeichnung der Schreibgeschwindigkeit des Speichers über Zeit</p>
+<h4 id="storage-read-speeds"><a class="header" href="#storage-read-speeds">Storage Read speeds</a></h4>
+<p>Aufzeichnung der Lesegeschwindigkeit des Speichers über Zeit</p>
+<h3 id="additional-metrics-selection"><a class="header" href="#additional-metrics-selection">Additional Metrics (selection)</a></h3>
+<h4 id="cpu-usage-per-service"><a class="header" href="#cpu-usage-per-service">CPU Usage per service</a></h4>
+<p>Aufzeichnung der CPU-Auslastung aufgeschlüsselt nach Zeit und Service.</p>
+<ul>
+<li><strong>Keycloak:</strong> Identity-Provider</li>
+<li><strong>ownCloud:</strong> Plattform des Cloudspeichers</li>
+<li><strong>onlyoffice:</strong> WebOffice-Module</li>
+<li><strong>wopiserver:</strong> Modul, das die Kommunikation zwischen ownCloud und OnlyOffice regelt</li>
+</ul>
+<h4 id="memory-usage-per-service"><a class="header" href="#memory-usage-per-service">Memory Usage per service</a></h4>
+<p>Aufzeichnung der Arbeitsspeicherauslastung aufgeschlüsselt nach Zeit und Service.</p>
+<ul>
+<li><strong>Keycloak:</strong> Identity-Provider</li>
+<li><strong>ownCloud:</strong> Plattform des Cloudspeichers</li>
+<li><strong>onlyoffice:</strong> WebOffice-Module</li>
+<li><strong>wopiserver:</strong> Modul, das die Kommunikation zwischen ownCloud und OnlyOffice regelt</li>
+</ul>
 
                     </main>
 
