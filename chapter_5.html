@@ -147,6 +147,35 @@
                     <main>
                         <h1 id="funktionen"><a class="header" href="#funktionen">Funktionen</a></h1>
 <p>In diesem Kapitel erhalten Sie Anleitungen für einige grundlegende Workflows, wie Sie mit ownCloud arbeiten können.</p>
+<h2 id="inhaltsverzeichnis"><a class="header" href="#inhaltsverzeichnis">Inhaltsverzeichnis</a></h2>
+<ul class="uk-list uk-list-hyphen">
+  <li><a href="#dateien-erstellen">Dateien erstellen</a>
+    <ul class="uk-list uk-list-circle">
+      <li><a href="#bereits-bestehende-ressourcen">Bereits bestehende Ressourcen</a></li>
+    </ul>
+  </li>
+<li><a href="#dateien-und-ordner-hochladen">Dateien und Ordner hochladen</a>
+    <ul class="uk-list uk-list-circle">
+      <li><a href="#upload-via-desktop-sync-client">Upload via Desktop Sync-Client</a></li>
+      <li><a href="#upload-via-mobile-client">Upload via Mobile Client</a></li>
+    </ul>
+  </li>
+<li><a href="#dateien-und-ordner-mit-anderen-personen-teilen">Dateien und Ordner mit anderen Personen teilen</a>
+    <ul class="uk-list uk-list-circle">
+      <li><a href="#mit-anderen-teilen">Mit anderen teilen</a></li>
+      <li><a href="#per-link-teilen">Per Link teilen</a></li>
+      <li><a href="#mobile-clients-dateien-teilen">Mobile Clients: Dateien teilen</a></li>
+    </ul>
+  </li>
+  <li><a href="#virtual-file-system-vfs">Virtual File System (VFS)</a></li>
+<li><a href="#spaces">Spaces</a>
+    <ul class="uk-list uk-list-circle">
+      <li><a href="#einen-neuen-space-anlegen">Einen neuen Space anlegen</a></li>
+      <li><a href="#personen-zum-space-einladen">Personen zum Space einladen</a></li>
+      <li><a href="#space-bearbeiten">Space bearbeiten</a></li>
+    </ul>
+  </li>
+</ul>
 <h2 id="dateien-erstellen"><a class="header" href="#dateien-erstellen">Dateien erstellen</a></h2>
 <p>ownCloud bietet eine native Möglichkeit, schnell und unkompliziert neue Dateien der gängigsten Dateitypen zu erstellen. Klicken Sie dazu in der Dateiliste auf den Button &quot;Neu&quot;. Im sich öffnenden Kontextmenü können Sie nun Ihren gewünschten Dateityp auswählen.</p>
 <p><img src="./images/datei-erstellen.jpg#uk-margin-auto" alt="Datei erstellen" /></p>
@@ -155,6 +184,23 @@
   <source src="videos/Datei-erstellen.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
+<h3 id="bereits-bestehende-ressourcen"><a class="header" href="#bereits-bestehende-ressourcen">Bereits bestehende Ressourcen</a></h3>
+<p>Für die Teststellung stehen Ihnen einige Ressourcen bereits zur Verfügung, die Ihnen den Umgang mit dem Cloudspeicher erleichtern sollen. Diese sind nicht zwingend zu nutzen, Sie können auch jederzeit eigene Dateien erstellen und hochladen. Folgende Ressourcen sind bereits für Sie erstellt:</p>
+<table class="uk-table uk-table-striped">
+  <tr>
+    <th>Space</th>
+    <th>Beschreibung</th>
+  </tr>
+<tr>
+    <td>Malware<br />(<a href="https://ocis.owncloud.cloudspeicher-bayern.de/files/spaces/project/malware" target="_blank">Link</a>)</td>
+    <td>Ein Space, der Dateien zum Testen des Virenscanners bereithält, s. <a href="./chapter_1.11.html">Kapitel A-CS-07</a></td>
+  </tr>
+<tr>
+    <td>Beispieldateien<br />(<a href="https://ocis.owncloud.cloudspeicher-bayern.de/files/spaces/project/beispieldateien" target="_blank">Link</a>)</td>
+    <td>Ein Space, der WebOffice- und Mediendateien in verschiedenen Dateiformaten bereithält. Diese werden in einer Vielzahl an Anforderungen benötigt.
+  </tr>
+</table>
+<p>Wo Sie die Spaces finden und wie Sie damit arbeiten wird Ihnen in <a href="./chapter_5.html#spaces">Kapitel 5: Spaces</a> erklärt.</p>
 <h2 id="dateien-und-ordner-hochladen"><a class="header" href="#dateien-und-ordner-hochladen">Dateien und Ordner hochladen</a></h2>
 <p>Vorhandene, lokale Dateien können Sie spielend einfach in die Cloud hochladen. Klicken und ziehen Sie entsprechende Dateien per Drag'n Drop in die Dateiliste oder nutzen Sie den Button &quot;Hochladen&quot;. Sowohl Dateien als auch ganze Ordner können auf beiden Wegen hochgeladen werden.</p>
 <video style="width: 100%; height: auto;margin-top: 25px;" width="320" height="240" controls>
@@ -189,7 +235,8 @@ Hierbei wird noch einmal unterschieden zwischen:</p>
 <li><strong>Quicklink</strong> - Ein Zugriffslink für die Ressource mit einer feststehenden Berechtigung. Diesen erreichen Sie übrigens auch über das Quicklink Icon <img src="./images/icon-quicklink.jpg#uk-display-inline" alt="Share Icon" /> in der Dateiliste.</li>
 <li><strong>Link hinzufügen</strong> - Hier können Sie mehrfach Zugriffslinks mit unterschiedlichen Berechtigungen erstellen. Zudem können Sie zur besseren Übersicht Namen vergeben.</li>
 </ul>
-<p>Mit Klick auf &quot;Bearbeiter&quot; können Sie analog zu &quot;Mit anderen teilen&quot; die Berechtigung festlegen, die für den jeweiligen Link gelten soll.</p>
+<p><img src="./images/linkshare-permissions.jpg#uk-margin-auto" alt="Linkshare Berechtigungen" /></p>
+<p>Mit Klick auf &quot;Bearbeiter&quot; bzw &quot;Betrachter&quot; können Sie analog zu &quot;Mit anderen teilen&quot; die Berechtigung festlegen, die für den jeweiligen Link gelten soll.</p>
 <div class="uk-alert">
   <h4 id="passwortschutz-und-ablaufdatum"><a class="header" href="#passwortschutz-und-ablaufdatum">Passwortschutz und Ablaufdatum</a></h4>
   <p>Wie Sie einen Freigabelink mit einem Passwortschutz versehen erfahren Sie in <a href="./chapter_1.29.html">Kapitel EG-CS-21</a>.<br />
@@ -207,19 +254,46 @@ Alle vom Web-Client möglichen Berechtigungseinstellungen sowie Passwortschutz u
   Your browser does not support the video tag.
 </video>
 <h2 id="virtual-file-system-vfs"><a class="header" href="#virtual-file-system-vfs">Virtual File System (VFS)</a></h2>
-<p>ownCloud bietet den Nutzern die Möglichkeit, bei der Synchronisierung von Daten ein virtuelles Dateisystem (VFS) zu aktivieren. Das VFS stellt dem Benutzer alle Dateien in seinem Speicherbereich lokal zur Verfügung - allerdings nur über Platzhalter. Erst wenn der Benutzer eine Datei öffnet wird diese im Hintergrund automatisch heruntergeladen. Dies hat eine enorme Platzersparnis zur Folge und macht eine selektiven Dateisynchronisation aus Platzgründen obsolet.</p>
+<p>ownCloud bietet den Nutzern die Möglichkeit, bei der Synchronisierung von Daten ein virtuelles Dateisystem (VFS) zu aktivieren. Das VFS stellt dem Benutzer alle Dateien in seinem Speicherbereich lokal zur Verfügung - allerdings nur über Platzhalter. Erst wenn der Benutzer eine Datei öffnet wird diese im Hintergrund automatisch heruntergeladen. Dies hat eine enorme Platzersparnis zur Folge und macht eine manuelle selektive Dateisynchronisation obsolet.</p>
 <div class="uk-alert">
   <h4 id="hinweis"><a class="header" href="#hinweis">Hinweis</a></h4>
-  <p>VFS ist aktuell nur für den Windows Sync-Client verfügbar. Für Mac sind für die Nutzung von VFS angekündigte Schnittstellen leider bisher nicht von Apple implementiert worden was die Nutzung von VFS verhindert.</p>
+  <p>VFS ist aktuell nur für den Windows Sync-Client verfügbar. Für Mac und Linux sind benötigte Schnittstellen leider bisher nicht implementiert was die Nutzung von VFS verhindert.</p>
 </div>
 <p><img src="./images/vfs-win.jpg#uk-margin-auto" alt="VFS Windows" /></p>
 <p>Das <img src="./images/icon-cloud.jpg#uk-display-inline" alt="Cloud Icon" /> Icon zeigt Ihnen an, dass diese Datei als Platzhalter auf Ihrem lokalen Dateisystem existiert. Klicken Sie doppelt auf eine Datei um diese zu öffnen. Sie werden sehen, dass sie das Icon in <img src="./images/icon-synced.jpg#uk-display-inline" alt="Icon Synced" /> geändert wird. Die Datei ist jetzt heruntergeladen und kann lokal bearbeitet werden. Änderungen werden automatisch in die Cloud synchronisiert.</p>
 <p>Sie können Dateien oder auch ganze Verzeichnisse herunterladen und damit auch offline verfügbar machen im dem Sie auf eine Datei rechts klicken und &quot;Immer auf diesem Gerät beibehalten&quot; wählen. Möchten Sie diesen Prozess rückgängig machen um Speicherplatz auf Ihrem lokalen Gerärt freizugeben wählen Sie im Kontextmenü &quot;Speicherplatz freigeben&quot;. Damit wird die lokale Kopie gelöscht und wieder per Platzhalter vorgehalten.</p>
 <div class="uk-alert">
   <h4 id="hinweis-1"><a class="header" href="#hinweis-1">Hinweis</a></h4>
-  <p>VFS ist für Windows standardmäßig aktiviert. Damit sind Verzeichnisse und Dateien nicht automatisch offline verfügbar. Dies muss über Rechtsklick -> "Immer auf diesem Gerät beibehalten" geschehen. Dies kann auch für den gesamten Sync-Ordner aktiviert werden.
+  <p>VFS ist für Windows standardmäßig aktiviert. Damit sind Verzeichnisse und Dateien nicht automatisch offline verfügbar. Wie Sie Dateien und Ordner offline verfügbar machen wird Ihnen in <a href="./chapter_1.26.html">EG-CS-14</a> erklärt.
   </p>
 </div>
+<h2 id="spaces"><a class="header" href="#spaces">Spaces</a></h2>
+<p>Spaces sind benutzerunabhängige Speicherbereiche, die den Verwaltungsaufwand einer Cloud-Speicherlösung drastisch verringern. In diesem Blogbeitrag erläutert Produktmanager Patrick Maier was Spaces sind und warum diese oenCloud so einzigartig machen (englisch): <a href="https://owncloud.com/de/news/infinite-scale-spaces/" target="_blank">Spaces: A Quantum Leap for Enterprise Collaboration</a>.</p>
+<p>Spaces eignen sich deshalb herrvoragend für Speicherbereiche, die wechselnde Administratoren haben - wie zum Beispiel Schulklassen mit wechselnden Lehrern. </p>
+<div class="uk-alert">
+  <h4 id="bestehende-spaces"><a class="header" href="#bestehende-spaces">Bestehende Spaces</a></h4>
+  <p>Die Teststellung verfügt über bereits angelegte Spaces, die Sie zum Testen verwenden können. Eine Erklärung der vorhandenen Spaces finden Sie in <a href="./chapter_5.html#bereits-bestehende-ressourcen">Kapitel 5: Bestehende Ressourcen</a></p>
+</div>
+<p><img src="./images/spaces.jpg#uk-margin-auto" alt="Spaces" /></p>
+<h3 id="einen-neuen-space-anlegen"><a class="header" href="#einen-neuen-space-anlegen">Einen neuen Space anlegen</a></h3>
+<p>Klicken Sie für eine Übersicht der Ihnen zugewiesenen Spaces in der linken Sidebar auf &quot;Spaces&quot;. Klicken Sie auf &quot;+ Neuer Space&quot; um einen neuen Space anzulegen (Berechtigung &quot;Space Admin&quot; erforderlich, s. <a href="./chapter_4.html">Kapitel 4: Accounts</a>). Geben Sie einen gewünschten Namen ein und klicken Sie auf &quot;Erstellen&quot;. Ein neuer, leerer Space wird angelegt. Klicken Sie auf den angelegten Space um diesen zu öffnen.</p>
+<h3 id="personen-zum-space-einladen"><a class="header" href="#personen-zum-space-einladen">Personen zum Space einladen</a></h3>
+<p>Klicken Sie auf das <img src="./images/icon-users.jpg#uk-display-inline" alt="Icon Users" />. Sie können ebenso über das Kontextmenü <img src="./images/icon_threedots.jpg#uk-display-inline" alt="Kontext-Menü" /> eine Vielzahl an Bearbeitungsmöglichkeiten aufrufen. Klicken Sie zunächst auf &quot;Mitglieder&quot;.</p>
+<p><img src="./images/spaces-sidebar.jpg#uk-margin-auto" alt="Spaces bearbeiten" /></p>
+<p>Analog dazu, wie Sie Dateien mit anderen Personen teilen, können Sie nun Personen als Mitglieder des Spaces einladen. Geben Sie dazu bei &quot;Mitglieder hinzufügen&quot; den Namen der Person ein, die Sie hinzufügen möchten. Sie können dabei festlegen ob die Person Berechtigungen als Betrachter, Bearbeiter oder Manager haben soll. Klicken Sie zum Abschluss auf &quot;Hinzufügen&quot;. Die Person wird nun darüber informiert und hat ab sofort Zugriff auf diesen Space.</p>
+<p>Analog zum Teilen von Dateien können Spaces auch über Freigabelinks geteilt werden (s. <a href="./chapter_5.html#per-link-teilen">Kapitel 5: Dateien per Link teilen</a>).</p>
+<h3 id="space-bearbeiten"><a class="header" href="#space-bearbeiten">Space bearbeiten</a></h3>
+<p>Öffnen Sie das Kontextmenü <img src="./images/icon_threedots.jpg#uk-display-inline" alt="Kontext-Menü" />. </p>
+<ul>
+<li><strong>Umbenennen:</strong> Ändern Sie den Namen des Spaces, z.B. aus &quot;Klasse 8a&quot; wird im neuen Schuljahr &quot;Klasse 9a&quot;</li>
+<li><strong>Untertitel bearbeiten:</strong> Bearbeiten Sie den Untertitel des Spaces. Tragen Sie z.B. den Namen des Klassenlehrers dort ein. Dieser wird auch in der Spaceübersicht angezeigt.</li>
+<li><strong>Beschreibung bearbeiten:</strong> Ein Freitextfeld, in dem Sie ausführlichere Informationen über den Space eintragen können.</li>
+<li><strong>Bild bearbeiten:</strong> Fügen Sie dem Space ein Bild hinzu.</li>
+<li><strong>Quota ändern:</strong> Legen Sie die Speichergröße fest, die dem Space zur Verfügung stehen soll.</li>
+<li><strong>Deaktivieren:</strong> Deaktiviert den Space. Es ist kein Zugriff mehr möglich. Nur Space-Administratorn können den Space wieder aktivieren.</li>
+<li><strong>Gelöschte Dateien:</strong> Öffnet den Papierkorb des Spaces. Gelöschte Dateien können hier wiederhergestellt werden.</li>
+<li><strong>Details:</strong> Öffnet die rechte Sidebar mit Details zum Space</li>
+</ul>
 
                     </main>
 
