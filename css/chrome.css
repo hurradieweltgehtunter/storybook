@@ -701,3 +701,7 @@ table td {
 
 
 /* Chapter specifix css */
+
+@media print {
+    .content img { page-break-before: always; } /* page-break-after works, as well */
+}
